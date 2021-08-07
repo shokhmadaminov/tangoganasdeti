@@ -1,0 +1,200 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+
+body{
+    min-height: 97vh;
+    background-color: #333333;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    min-height: 90vh;
+    width: 65%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.img-cont{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1)3%, rgba(0, 0, 0, 0.1)90%), url('./img/mario.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 370px;
+    width: 100%;
+    border-radius: 5px 5px 0 0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 2rem;
+}
+.img-cont h2{
+    color: #fff;
+    margin: 0;
+}
+.img-cont h4{
+    color: #fff;
+}
+.likes{
+    color: #fff;
+    margin-left: 40px;
+}
+.likes p{
+    display: inline-block;
+    margin-left: 5px;
+}
+.class{
+    color:gold ;
+}
+.class1{
+    color: #fff;
+}
+.class2{
+    color: red;
+}
+
+
+.text-cont{
+    box-sizing: border-box;
+    display: flex;
+    padding: 1rem 2rem;
+}
+
+
+.text-div{
+    width: 65%;
+}
+.text-div p{
+    font-size: 19px;
+    line-height: 1.5;
+    color: #797979;
+}
+.text-div p a{
+    text-decoration: none;
+    margin-left: 5px;
+}
+.text-div img{
+    height: 50px;
+    border-radius: 100%;
+    margin-left: 20px;
+}
+.text-div img:hover{
+    transform: scale(1.4);
+    transition: 0.5s;
+}
+
+
+
+.img-div{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+}
+
+.video-span{
+    height: 230px;
+    width: 170px;
+    background: url('./img/resizer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-130px);
+    position: absolute;
+}
+.play{
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1rem;
+    border: solid 1px #797979;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+button{
+    padding: 0.5rem 1rem;
+    background-color: #cfcfcf;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    color: #696969;
+}
+button:hover{
+    background-color: #797979;
+    color: #fff;
+}
+
+
+@media (max-width: 1200px){
+    .video-span{
+        transform: translateY(-150px);
+    }
+}
+@media (max-width: 1054px){
+    .video-span{
+        transform: translateY(-190px);
+    }
+}
+@media (max-width: 920px){
+    .video-span{
+        transform: translateY(-210px);
+    }
+}
+@media (max-width: 820px){
+    .video-span{
+        transform: translateY(-230px);
+    }
+}
+
+@media (max-width: 785px){
+    .text-cont{
+        flex-direction: column;
+        text-align: center;
+    }
+    .text-div{
+        width: 100%;
+    }
+    .img-div{
+        width: 100%;
+    }
+    .video-span{
+        position:static;
+        transform: none;
+    }
+
+}
+@media (max-width: 480px){
+    .likes{
+        margin-left: 0;
+    }
+    .img-div{
+        padding: 0;
+    }
+    h2{
+        font-size: 6vw;
+    }
+    h4{
+        font-size: 4vw;
+    }
+
+}
+@media (max-width: 340px){
+    .text-cont{
+        padding: 0;
+    }
+    p{
+        font-size: 4vw;
+    }
+}
